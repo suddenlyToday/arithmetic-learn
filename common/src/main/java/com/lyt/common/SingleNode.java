@@ -1,5 +1,7 @@
 package com.lyt.common;
 
+import java.util.Objects;
+
 public class SingleNode {
     public String name;
     public SingleNode next;
@@ -16,8 +18,22 @@ public class SingleNode {
             next = next.next;
         }
         if (res.length() > 0) {
-            res.append("-->null");
+            res.append("null");
         }
         System.out.println(res.toString());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SingleNode that = (SingleNode) o;
+        return Objects.equals(name, that.name) &&
+                Objects.equals(next, that.next);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, next);
     }
 }
