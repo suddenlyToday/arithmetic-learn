@@ -67,7 +67,8 @@ public class CombineSortedLinkedListTest extends TestCase {
 
         SingleNode nodeA1 = getA2F();
 
-        Assert.assertEquals(merger.combine(nodeD, nodeA), nodeA1);
+        SingleNode res = merger.combine(nodeD, nodeA);
+        Assert.assertEquals(res, nodeA1);
     }
 
     public void testCombine4() {
