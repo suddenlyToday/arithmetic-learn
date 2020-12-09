@@ -9,6 +9,6 @@
 + 第五周：[两个有序的链表合并](combine-sorted-linkedlist/readme.md)
 + 第六周：[删除链表倒数第 n 个结点](delete-nth-node-from-last/readme.md)
 + 第七周：[求链表的中间结点](find-mid-of-linkedlist/readme.md)
-+ 第八周：dekker算法 （todo）
++ 第八周：[dekker算法](dekker/readme.md)
 + 第九周：peterson算法 （todo）
 
